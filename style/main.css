@@ -1,0 +1,120 @@
+/*
+Coisas para refatorar:
+- adicionar novas fonts = google fonts;
+
+pesquisar sobre:
+- CSS TRANSITION
+- CSS ANIMATION
+- Wrapper vs Containers
+
+DESAFIOS
+- Dar via aos botoes na tela ;
+- Fazer uma nova roupagem
+*/
+:root {
+    --vermelho: #e50917;
+    --preta: #141414;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*BASE*/
+  body {
+    background-color: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: "Arial Black", Times, sans-serif;
+    font-size: 40px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+  }
+  
+  header nav a:hover {
+    color: #fff;
+  }
+  
+  header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /*FILME PRINCIPAL*/
+  
+  .filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+      url("../img/capa-house.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .container {
+    margin-left: 2%;
+  }
+  
+  .filme-principal .container {
+    width: 60%;
+  }
+  
+  .filme-principal .titulo {
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  
+  .filme-principal .descricao {
+    margin-bottom: 45px;
+  }
+  
+  .filme-principal .botoes .botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+  
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .filme-principal .botoes .botao:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease all;
+  }
+  
+  .botao i {
+    margin-right: 5px;
+  }
+  
+  /*CARROSEL*/
+  
+  .carrosel-filmes {
+    margin-top: 1%;
+  }
+  
+  .box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  
