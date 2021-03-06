@@ -10,6 +10,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - Visual Studio Code
 - HTML5
+- CSS3
+- JavaScript
 - [jQuery](https://jquery.com/)
 - [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/)
 
